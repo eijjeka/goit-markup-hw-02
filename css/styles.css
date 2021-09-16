@@ -13,10 +13,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-title);
+  letter-spacing: 0.03em;
 }
-a {
-  text-decoration: none; /* Ну почему нельзя????? */
-}
+
 .list {
   list-style: none;
 }
@@ -45,23 +44,25 @@ a {
   text-decoration: none;
 }
 
-.text-logo {
-  color: var(--accent-color);
-}
-
-.link {
+.nav-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: inherit;
+  letter-spacing: 0.02em;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.link {
+  text-decoration: none;
 }
-.current {
+
+.text-logo,
+.current,
+.link:hover,
+.link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -169,12 +170,10 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
-}
 /* -----------------/////////////////////PORTFOLIO///////////////////--------------------- */
 
+.btn-filter:hover,
+.btn-filter:focus,
 .active {
   background: var(--accent-color);
   color: var(--color-simple);
@@ -183,6 +182,8 @@ a {
 .btn-filter {
   cursor: pointer;
   border: none;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
